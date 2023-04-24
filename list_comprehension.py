@@ -36,6 +36,19 @@ def square():
     sq = {n : n*n for n in numbers}
     return sq
 
+li = [x.upper() for x in "DharaNI"]
+print(li)
+
+li = [(x, y) for x in range(4) for y in range(5, 10)]
+print(li)
+
+d = {x: x.upper() for x in "dhrani"}
+print(d)
+
+# swap
+d = {v: k for k, v in d.items()}
+print(d)
+
 print(even())
 print(odd())
 print(vowel_in_string("hello"))
